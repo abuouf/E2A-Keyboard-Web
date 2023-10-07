@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="rtl">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>لوحة المفاتيح العريبة</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href="css/vtip.css" rel="stylesheet" type="text/css" />
+<script src="script/jquery.js" type="text/javascript"></script>
+<script src="script/vtip.js" type="text/javascript"></script>
+<script src="script/e2a.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="content">
+<div id="top">
+<h1>  لوحة المفاتيح العربية المطورة (تجريبي) </h1>
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a href="http://www.addthis.com/bookmark.php?v=250&amp;username=xa-4d56885f42b6454a" class="addthis_button_compact">Share</a>
+<span class="addthis_separator">|</span>
+<a class="addthis_button_preferred_1"></a>
+<a class="addthis_button_preferred_2"></a>
+<a class="addthis_button_preferred_3"></a>
+<a class="addthis_button_preferred_4"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=xa-4d56885f42b6454a"></script>
+<!-- AddThis Button END -->
+</div>
+<form name="form1">
+<label>
+تحويل :
+</label>
+<SELECT name="lang"> 
+      <OPTION value="e2a">إنجليزي إلي عربي </option>
+      <!--<OPTION value="f2a">فرنكو إلي عربي  </option>-->
+</SELECT>
+<label> 
+لوحة المفاتيح
+</label>
+<SELECT name="key"> 
+      <OPTION value="qw102">QWERTY 102</option>
+      <OPTION value="qw101">QWERTY 101</option>
+	  <OPTION value="az102">AZERTY 102</option>
+      <OPTION value="az101">AZERTY 101</option>
+</SELECT> 
+<br />
+<label>اكتب هنا الانحليزية </label><br />
+
+<textarea name = "English" onKeyPress="DisplayMsg(event)"  rows="3" cols="40" class="vtip" title="ادخل الماوس وابدء بالكتابة في المربع "></textarea><br />
+<label> العربي المقابل</label><br />
+ <textarea name="Arabic" rows="3" cols="40" class="vtip" title="ستظهر الكتابة العربية هنا" ></textarea><br />
+  <INPUT TYPE="image"  src="images/submit_btn.png" value="convert" onclick="convert(); return false;" id="btn" /> 
+  
+ </form>
+ 
+</div>
+
+</body>
+</html>
